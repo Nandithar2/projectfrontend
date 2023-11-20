@@ -169,7 +169,7 @@ const handleOpenRazorpay = (data) => {
     const handlePayment = (amount) => {
         const _data = { amount: amount }
          //Axios.post('http://localhost:3000/orders', _data)
-      Axios.post('https://mern-backend-mslp.onrender.com//orders', _data)
+      Axios.post('https://mern-backend-mslp.onrender.com/orders', _data)
             .then(res => {
                 console.log(res.data, "29")
                 handleOpenRazorpay(res.data.data)
