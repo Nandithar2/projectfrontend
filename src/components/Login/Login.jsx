@@ -63,8 +63,8 @@ const Login = () => {
                 }
 
             }).catch(err => console.log(err))*/
-            Axios.get('http://localhost:3000/custdetails')
-            // Axios.get('https://online-food-delivery-system.onrender.com/custdetails')
+            //Axios.get('http://localhost:3000/custdetails')
+             Axios.get('https://mern-backend-mslp.onrender.com//custdetails')
       .then((res) => {
         const cust = res.data.find((d) => d.CustomerEmail === userDetails.email);
 
@@ -90,8 +90,8 @@ const Login = () => {
     }
         else {
             //url = url +'2';
-            Axios.get('http://localhost:3000/resdetails')
-            // Axios.get('https://online-food-delivery-system.onrender.com/resdetails')
+            //Axios.get('http://localhost:3000/resdetails')
+            Axios.get('https://mern-backend-mslp.onrender.com//resdetails')
       .then((res) => {
         const restaurant = res.data.find((d) => d.OwnerEmail === userDetails.email);
 
